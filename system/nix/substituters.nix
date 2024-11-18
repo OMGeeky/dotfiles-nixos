@@ -1,6 +1,6 @@
 {
 
-    nix.serrings = {
+    nix.settings = {
 
         substituters = [
             # high priority since it's almost always used

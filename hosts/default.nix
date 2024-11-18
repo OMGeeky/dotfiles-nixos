@@ -27,7 +27,7 @@
                     "${mod}/programs/home-manager.nix"
                     {
                         home-manager = {
-                            users.omgeeky.imports = homeImports."omgeeky@khadas";
+                           users.omgeeky.imports = homeImports."omgeeky@khadas";
                             extraSpecialArgs = specialArgs;
                         };
                     }

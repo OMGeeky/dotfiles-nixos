@@ -7,7 +7,7 @@
 
         zsh = {
             enable = true;
-            autosuggestion.enable = true;
+            autosuggestions.enable = true;
             syntaxHighlighting = {
                 enable = true;
                 patterns = {"rf -rf *" = "fg=black,bg=red";};
