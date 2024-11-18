@@ -11,9 +11,9 @@ let
         ./services/pipewire.nix
 
         
-      ./hardware/bluetooth.nix
+        ./hardware/bluetooth.nix
 
-      ./services/power.nix
+        ./services/power.nix
     ];
 in {
     inherit desktop;

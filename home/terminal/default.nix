@@ -1,11 +1,9 @@
 {config, ...}: let 
-    data = config.xdg.dataHome;
-    conf = config.xdg.configHome;
     cache = config.xdg.cacheHome;
 in {
     imports = [
-        ./programs
-        ./shell/zsh.nix
+#        ./programs
+#        ./shells/zsh
     ];
 
     home.sessionVariables = {
@@ -15,4 +13,10 @@ in {
         EDITOR = "nvim";
 
     };
+
+#    programs.zsh = {
+#        enable = true;
+#        autosuggestions.enable = true;
+#        autocd = true;
+#    };
 }
