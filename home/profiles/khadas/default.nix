@@ -1,9 +1,6 @@
 {...}:{
     imports = [
-        # home
-        ../../.
-        ../../homepgrog
-
+        
     ];
     wayland.windowManager.hyprland.settings = {
         monitor = [

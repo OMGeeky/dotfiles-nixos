@@ -8,7 +8,7 @@
 
             imports = [
                 ./hosts
-#                ./modules
+                ./modules
             ];
 
             perSystem = {

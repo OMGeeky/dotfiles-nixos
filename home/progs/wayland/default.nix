@@ -2,11 +2,11 @@
     pkgs,
     ...
 }: {
-#    imports = [
+    imports = [
 #        ./hyprland
-#        ./hyprlock.nix
-#        ./wlogout.nix
-#    ];
+        ./hyprlock.nix
+        ./wlogout.nix
+    ];
     home.packages = with pkgs; [
         # screenshot
         grim

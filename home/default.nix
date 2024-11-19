@@ -5,9 +5,9 @@
     ...
 }: {
     imports = [
-#        ./specialisations.nix
+        ./special/default.nix
         ./terminal
-#        self.nixosModules.theme
+        self.nixosModules.theme
     ];
 
     home = {

@@ -11,7 +11,7 @@
             '';
             type = lib.types.str;
             example = lib.literalExample "catppuccin-latte";
-            defaut = "dark";
+            default = "dark";
         };
         wallpaper = lib.mkOption {
             description = ''

@@ -22,6 +22,7 @@
                 ++ [
                     ./nixos
                     "${mod}/core/users.nix"
+                    "${mod}/hardware/nvidia.nix"
                     "${mod}/nix"
                     "${mod}/programs/zsh.nix"
                     "${mod}/programs/home-manager.nix"

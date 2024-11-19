@@ -4,8 +4,8 @@
   pkgs,
   ...
 }: let
-  cursor = "Bibata-Modern-Classic-Hyprcursor";
-  cursorPackage = inputs.self.packages.${pkgs.system}.bibata-hyprcursor;
+#  cursor = "Bibata-Modern-Classic-Hyprcursor";
+#  cursorPackage = inputs.self.packages.${pkgs.system}.bibata-hyprcursor;
 in {
   imports = [
     ./binds.nix
@@ -18,7 +18,7 @@ in {
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
   ];
 
-  xdg.dataFile."icons/${cursor}".source = "${cursorPackage}/share/icons/${cursor}";
+#  xdg.dataFile."icons/${cursor}".source = "${cursorPackage}/share/icons/${cursor}";
 
   # enable hyprland
   wayland.windowManager.hyprland = {
