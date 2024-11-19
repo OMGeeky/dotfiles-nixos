@@ -4,16 +4,16 @@ let
         ./core/boot.nix
 
 
-        ./programs
+#        ./programs
 
-        ./services
-        ./services/greetd.nix
-        ./services/pipewire.nix
+#        ./services
+#        ./services/greetd.nix
+#        ./services/pipewire.nix
 
         
-        ./hardware/bluetooth.nix
+#        ./hardware/bluetooth.nix
 
-        ./services/power.nix
+#        ./services/power.nix
     ];
 in {
     inherit desktop;

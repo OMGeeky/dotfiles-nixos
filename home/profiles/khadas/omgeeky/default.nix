@@ -1,23 +1,34 @@
 {
+    self,
+    ...
+    }: let 
+        
+        homeModulesPath = "${self}/home/";
+    in 
+    {
     imports = [
+        # default config for pc
+#        ../. 
+
         # editors
         ../../../editors/helix
 
         # programs
-        ../../../programs
-        ../../../programs/wayland
+        ../../../progs
+        ../../../progs/wayland
+#        ../../../programs/wayland
 
         # media services
-        ../../../services/media/playerctl.nix
-        ../../../services/media/spotifyd.nix
+#        "${homeModulesPath}/services/media/playerctl.nix"
+#        ../../../services/media/spotifyd.nix
 
         # system services
-        ../../../services/system/kdeconnect.nix
-        ../../../services/system/polkit-agent.nix
-        ../../../services/system/theme.nix
+#        "${homeModulesPath}/services/system/kdeconnect.nix"
+#        "${homeModulesPath}/services/system/polkit-agent.nix"
+#        "${homeModulesPath}/services/system/theme.nix"
 
-        ../../../services/wayland/hyprpaper.nix
-        ../../../services/wayland/hypridle.nix
+#        ../../../services/wayland/hyprpaper.nix
+#        ../../../services/wayland/hypridle.nix
 
     ];
 }

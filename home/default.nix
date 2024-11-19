@@ -1,11 +1,13 @@
 {
+    lib,
     self,
+    inputs,
     ...
 }: {
     imports = [
+#        ./specialisations.nix
         ./terminal
-        self.nixosModules.theme
-        
+#        self.nixosModules.theme
     ];
 
     home = {

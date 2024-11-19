@@ -6,7 +6,7 @@
     flake.nixosConfigurations = let
         # shorten paths
         inherit (inputs.nixpkgs.lib) nixosSystem;
-        homeImports = import "${self}/home/profiles";
+        homeProfiles = import "${self}/home/profiles";
         mod = "${self}/system";
         
         # get the basic config to build on top of
@@ -27,7 +27,7 @@
                     "${mod}/programs/home-manager.nix"
                     {
                         home-manager = {
-                            users.omgeeky.imports = homeImports."omgeeky@khadas";
+                            users.omgeeky.imports = homeProfiles."omgeeky@khadas";
                             extraSpecialArgs = specialArgs;
                         };
                     }
