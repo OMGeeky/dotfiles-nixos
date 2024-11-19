@@ -3,7 +3,7 @@
     ...
 }: {
     imports = [
-#        ./hyprland
+        ./hyprland
         ./hyprlock.nix
         ./wlogout.nix
     ];

@@ -3,15 +3,12 @@
   inputs,
   pkgs,
   ...
-}: let
-#  cursor = "Bibata-Modern-Classic-Hyprcursor";
-#  cursorPackage = inputs.self.packages.${pkgs.system}.bibata-hyprcursor;
-in {
+}: {
   imports = [
     ./binds.nix
     ./rules.nix
     ./settings.nix
-    ./smartgaps.nix
+#    ./smartgaps.nix
   ];
 
   home.packages = [
@@ -26,10 +23,10 @@ in {
 
     package = inputs.hyprland.packages.${pkgs.system}.default;
 
-    plugins = with inputs.hyprland-plugins.packages.${pkgs.system}; [
-      # hyprbars
-      # hyprexpo
-    ];
+#    plugins = with inputs.hyprland-plugins.packages.${pkgs.system}; [
+#      # hyprbars
+#      # hyprexpo
+#    ];
 
     systemd = {
       enable = false;

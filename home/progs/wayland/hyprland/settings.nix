@@ -1,7 +1,7 @@
 {config, ...}: let
-  pointer = config.home.pointerCursor;
+#  pointer = config.home.pointerCursor;
 
-  cursorName = "Bibata-Modern-Classic-Hyprcursor";
+#  cursorName = "Bibata-Modern-Classic-Hyprcursor";
 in {
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
@@ -9,15 +9,15 @@ in {
 
     env = [
       "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
-      "HYPRCURSOR_THEME,${cursorName}"
-      "HYPRCURSOR_SIZE,${toString pointer.size}"
+#      "HYPRCURSOR_THEME,${cursorName}"
+#      "HYPRCURSOR_SIZE,${toString pointer.size}"
     ];
 
     exec-once = [
       # finalize startup
       "uwsm finalize"
       # set cursor for HL itself
-      "hyprctl setcursor ${cursorName} ${toString pointer.size}"
+#      "hyprctl setcursor ${cursorName} ${toString pointer.size}"
       "hyprlock"
     ];
 
