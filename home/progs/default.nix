@@ -7,6 +7,7 @@
     ];
     home.packages = with pkgs; [
         signal-desktop
+        neovim
 
         gnome-calculator
         gnome-control-center

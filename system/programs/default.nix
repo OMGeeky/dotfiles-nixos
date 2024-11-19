@@ -11,5 +11,10 @@
         kdeconnect.enable = true;
 
         seahorse.enable = true;
+
+        neovim = {
+            enable = true;
+            defaultEditor = true;
+        };
     };
 }

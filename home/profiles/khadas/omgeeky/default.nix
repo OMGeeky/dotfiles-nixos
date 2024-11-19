@@ -1,11 +1,4 @@
-{
-    self,
-    ...
-    }: let 
-        
-        homeModulesPath = "${self}/home/";
-    in 
-    {
+{ self, ... }: {
     imports = [
         # default config for pc
 #        ../. 
@@ -19,16 +12,15 @@
 #        ../../../programs/wayland
 
         # media services
-#        "${homeModulesPath}/services/media/playerctl.nix"
+        ../../../services/media/playerctl.nix
 #        ../../../services/media/spotifyd.nix
 
         # system services
-#        "${homeModulesPath}/services/system/kdeconnect.nix"
-#        "${homeModulesPath}/services/system/polkit-agent.nix"
-#        "${homeModulesPath}/services/system/theme.nix"
+        ../../../services/system/kdeconnect.nix
+        ../../../services/system/polkit-agent.nix
+        ../../../services/system/theme.nix
 
-#        ../../../services/wayland/hyprpaper.nix
-#        ../../../services/wayland/hypridle.nix
-
+        ../../../services/wayland/hyprpaper.nix
+        ../../../services/wayland/hypridle.nix
     ];
 }
