@@ -1,10 +1,10 @@
-{pkgs,...}:{
-#    imports = [
-#        ./anyrun/default.nix
-#        ./browsers/firefox.nix
+{ pkgs, ... }: {
+    imports = [
+        ./anyrun/default.nix
+        ./browsers/firefox.nix
 #        ./media
-#        ./gtk.nix
-#    ];
+        ./gtk.nix
+    ];
     home.packages = with pkgs; [
         signal-desktop
 
