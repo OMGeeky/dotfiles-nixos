@@ -29,7 +29,7 @@
 #    ];
 
     systemd = {
-      enable = false;
+      enable = false; # https://wiki.hyprland.org/Useful-Utilities/Systemd-start/
       variables = ["--all"];
       extraCommands = [
         "systemctl --user stop graphical-session.target"

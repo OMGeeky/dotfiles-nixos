@@ -1,7 +1,7 @@
 { self, ... }: {
     imports = [
         # default config for pc
-#        ../. 
+        ../. 
 
         # editors
         ../../../editors/helix
