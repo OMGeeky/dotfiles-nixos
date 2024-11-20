@@ -25,6 +25,7 @@
                     "${mod}/hardware/nvidia.nix"
                     "${mod}/nix"
                     "${mod}/programs/zsh.nix"
+                    "${mod}/programs/hyprland.nix"
                     "${mod}/programs/home-manager.nix"
                     {
                         home-manager = {
