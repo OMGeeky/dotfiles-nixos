@@ -1,4 +1,4 @@
-{ self, ... }: {
+{ ... }: {
     imports = [
         # default config for pc
         ../. 
@@ -9,7 +9,6 @@
         # programs
         ../../../progs
         ../../../progs/wayland
-#        ../../../programs/wayland
 
         # media services
         ../../../services/media/playerctl.nix

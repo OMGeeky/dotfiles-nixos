@@ -2,8 +2,8 @@
     cache = config.xdg.cacheHome;
 in {
     imports = [
-#        ./programs
-#        ./shells/zsh
+        ./programs
+        ./shells/zsh
     ];
 
     home.sessionVariables = {
