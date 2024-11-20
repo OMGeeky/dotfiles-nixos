@@ -8,6 +8,8 @@
 
         # terminal stuff
         ../../../terminal
+        ../../../terminal/emulators/kitty.nix
+
         # programs
         ../../../progs
         ../../../progs/wayland
