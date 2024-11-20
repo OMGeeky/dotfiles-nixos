@@ -6,6 +6,8 @@
         # editors
         ../../../editors/helix
 
+        # terminal stuff
+        ../../../terminal
         # programs
         ../../../progs
         ../../../progs/wayland
