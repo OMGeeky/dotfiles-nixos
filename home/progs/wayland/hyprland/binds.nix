@@ -14,9 +14,9 @@ let
     
     toggle = program: let
         prog = builtins.substring 0 14 program;
-    in "pkill ${prog} || uwsm app -- ${program}";
+    in "pkill ${prog} || ${program}";
     
-    runOnce = program: "pgrep ${program} || uwsm app -- ${program}";
+    runOnce = program: "pgrep ${program} || ${program}";
 in {
     wayland.windowManager.hyprland.settings = {
         # mouse movements
@@ -30,6 +30,7 @@ in {
         bind = [
             # compositor commands
             "$mod SHIFT, E, exec, pkill Hyprland"
+            "$mod, M, exit,"
             "$mod, Q, killactive,"
             "$mod, F, fullscreen,"
             "$mod, G, togglegroup,"
@@ -41,11 +42,12 @@ in {
             "$mod ALT, ,resizeactive,"
     
             # launcher
-            "$mod, SPACE, exec, ${toggle "anyrun"}"
+            "$mod, SPACE, exec, ${toggle "rofi -show run"}"
     
             # utility
             # terminal
-            "$mod, Return, exec, uwsm app -- $terminal"
+            "$mod, Return, exec, $terminal"
+            "$mod, A, exec, $terminal"
             # logout menu
             "$mod, Escape, exec, ${toggle "wlogout"} -p layer-shell"
             # lock screen

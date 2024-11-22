@@ -12,7 +12,7 @@
 
     config = {
       plugins = with inputs.anyrun.packages.${pkgs.system}; [
-        uwsm_app
+        #uwsm_app
         randr
         rink
         shell
@@ -28,12 +28,12 @@
     extraCss = builtins.readFile (./. + "/style-dark.css");
 
     extraConfigFiles = {
-      "uwsm_app.ron".text = ''
-        Config(
-          desktop_actions: false,
-          max_entries: 5,
-        )
-      '';
+#      "uwsm_app.ron".text = ''
+#        Config(
+#          desktop_actions: false,
+#          max_entries: 5,
+#        )
+#      '';
 
       "shell.ron".text = ''
         Config(

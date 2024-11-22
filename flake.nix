@@ -44,8 +44,6 @@
 
         # rest of inputs, alphabetical order?
         
-        anyrun.url = "github:fufexan/anyrun/launch-prefix";
-
         helix.url = "github:helix-editor/helix";
     
         hm = {

@@ -9,6 +9,7 @@
         # terminal stuff
         ../../../terminal
         ../../../terminal/emulators/kitty.nix
+        ../../../terminal/programs/lazygit.nix
 
         # programs
         ../../../progs

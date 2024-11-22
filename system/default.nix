@@ -7,7 +7,8 @@ let
         ./programs
 
         ./services
-        ./services/greetd.nix
+#        ./services/greetd.nix
+        ./services/sddm.nix
         ./services/pipewire.nix
 
         

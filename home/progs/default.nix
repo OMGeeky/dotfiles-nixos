@@ -1,6 +1,7 @@
 { pkgs, ... }: {
     imports = [
-        ./anyrun/default.nix
+#        ./anyrun
+        ./rofi
         ./browsers/firefox.nix
 #        ./media
         ./gtk.nix

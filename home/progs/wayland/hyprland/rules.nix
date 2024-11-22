@@ -15,6 +15,7 @@
 
       highopacity = [
         "anyrun"
+        "rofi"
         "osd"
         "logout_dialog"
       ];
