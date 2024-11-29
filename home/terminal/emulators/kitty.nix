@@ -12,7 +12,7 @@
 
       allow_remote_control = "yes";
       enable_audio_bell = "no";
-      visual_bell_duration = "0.1";
+#      visual_bell_duration = "0.1";
 
       copy_on_select = "clipboard";
 
@@ -20,9 +20,9 @@
       selection_background = "none";
 
       # colors
-      background_opacity = "0.9";
+      background_opacity = "0.7";
     };
 
-    theme = "Catppuccin-Mocha";
+#    theme = "Catppuccin-Mocha";
   };
 }
