@@ -27,7 +27,7 @@ in {
 
       input-field = [
         {
-          monitor = "eDP-1";
+#          monitor = "eDP-1";
 
           size = "300, 50";
 
