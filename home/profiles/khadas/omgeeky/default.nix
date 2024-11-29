@@ -14,6 +14,7 @@
         # programs
         ../../../progs
         ../../../progs/wayland
+        ../../../progs/jetbrains
 
         # media services
         ../../../services/media/playerctl.nix
