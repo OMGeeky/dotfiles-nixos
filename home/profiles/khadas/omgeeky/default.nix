@@ -3,6 +3,9 @@
         # default config for pc
         ../. 
 
+        # options
+        ../../../options
+
         # editors
         ../../../editors/helix
 
@@ -28,4 +31,8 @@
         ../../../services/wayland/hyprpaper.nix
         ../../../services/wayland/hypridle.nix
     ];
+
+    rust-tools.enable = true;
+
+
 }
