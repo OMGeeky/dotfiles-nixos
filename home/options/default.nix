@@ -5,11 +5,13 @@
         packages = lib.mkOption {
             type = lib.types.listOf lib.types.package;
             default = with pkgs; [
+                rustup
+                gcc
                 rustc
-                cargo
-                rustfmt
-                clippy
-                rust-analyzer
+#                cargo
+#                rustfmt
+#                clippy
+#                rust-analyzer
             ];
         };
 

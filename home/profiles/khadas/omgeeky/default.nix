@@ -18,6 +18,9 @@
         ../../../progs
         ../../../progs/wayland
         ../../../progs/jetbrains
+        ../../../progs/jetbrains/rust-rover.nix
+        ../../../progs/jetbrains/rider.nix
+        ../../../progs/jetbrains/pycharm.nix
 
         # media services
         ../../../services/media/playerctl.nix
