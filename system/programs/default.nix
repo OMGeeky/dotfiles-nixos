@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
     imports = [
         ./fonts.nix
         ./home-manager.nix
@@ -15,6 +15,15 @@
         neovim = {
             enable = true;
             defaultEditor = true;
+        };
+        steam = {
+            enable = true;
+            remotePlay.openFirewall = true;
+            extraPackages = with pkgs; [
+                gamescope
+            ];
+            protontricks.enable = true;
+            localNetworkGameTransfers.openFirewall = true;
         };
     };
 }
