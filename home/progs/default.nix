@@ -3,7 +3,7 @@
 #        ./anyrun
         ./rofi
         ./browsers/firefox.nix
-#        ./media
+        ./media
         ./gtk.nix
     ];
     home.packages = with pkgs; [
