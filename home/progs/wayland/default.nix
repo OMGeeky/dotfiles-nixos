@@ -13,8 +13,11 @@
         slurp
 
         # utils
-        wl-clipboard
         wlr-randr
+
+        # clipboard stuff
+        wl-clipboard # basic clipboard support
+        clipse # clipboard history client
     ];
     home.sessionVariables = {
         QT_QPA_PLATFORM = "wayland";

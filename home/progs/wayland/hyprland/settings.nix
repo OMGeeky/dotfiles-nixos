@@ -17,6 +17,7 @@ in {
       # set cursor for HL itself
 #      "hyprctl setcursor ${cursorName} ${toString pointer.size}"
 #      "hyprlock"
+      "clipse -listen" # run clipboard listener on startup
       "spotify" 
     ];
 

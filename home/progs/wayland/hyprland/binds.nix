@@ -43,11 +43,14 @@ in {
     
             # launcher
             "$mod, SPACE, exec, ${toggle "rofi -show run"}"
+
     
             # utility
             # terminal
             "$mod, Return, exec, $terminal"
             "$mod, A, exec, $terminal"
+            # clipboard manager
+            "$mod, V, exec, $terminal --class clipse -e 'clipse'"
             # logout menu
             "$mod, Escape, exec, ${toggle "wlogout"} -p layer-shell"
             # lock screen

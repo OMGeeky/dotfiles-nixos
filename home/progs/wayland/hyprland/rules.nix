@@ -49,6 +49,10 @@
       "workspace special silent, title:^(Zen — Sharing Indicator)$"
       "workspace special silent, title:^(.*is sharing (your screen|a window)\.)$"
 
+      # make sure clipse is floating and the right size (clipboard manager)
+      "float, class:(clipse)"
+      "size 622 652, class:(clipse)"
+
       # start spotify in ws9
       "workspace 9 silent, title:^(Spotify( Premium)?)$"
 
