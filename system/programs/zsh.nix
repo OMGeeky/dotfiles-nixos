@@ -14,6 +14,10 @@
                 styles = {"alias"="fg=magenta";};
                 highlighters = ["main" "brackets" "pattern"];
             };
+
+            # use direnv to have specific versions of stuff only for some 
+            # directories
+            interactiveShellInit =''eval "$(direnv hook $SHELL)"''; 
         };
     };
 }

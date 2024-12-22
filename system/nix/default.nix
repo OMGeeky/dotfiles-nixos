@@ -13,9 +13,9 @@
     ];
 
       # we need git for flakes
-    environment.systemPackages = [pkgs.git];
     environment.systemPackages = [
         pkgs.git
+        pkgs.direnv
         pkgs.kdePackages.dolphin
         pkgs.kdePackages.qtwayland
         pkgs.kdePackages.qtsvg
