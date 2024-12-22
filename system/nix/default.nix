@@ -14,6 +14,12 @@
 
       # we need git for flakes
     environment.systemPackages = [pkgs.git];
+    environment.systemPackages = [
+        pkgs.git
+        pkgs.kdePackages.dolphin
+        pkgs.kdePackages.qtwayland
+        pkgs.kdePackages.qtsvg
+    ];
     
     nix = let
         flakeInputs = lib.filterAttrs (_: v: lib.isType "flake" v) inputs;
