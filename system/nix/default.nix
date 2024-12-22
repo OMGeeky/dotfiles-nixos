@@ -21,6 +21,8 @@
         pkgs.kdePackages.qtsvg
     ];
     
+    virtualisation.docker.enable = true;
+
     nix = let
         flakeInputs = lib.filterAttrs (_: v: lib.isType "flake" v) inputs;
     in {
