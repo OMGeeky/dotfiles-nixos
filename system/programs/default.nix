@@ -3,6 +3,7 @@
         ./fonts.nix
         ./home-manager.nix
         ./xdg.nix
+        ./flatpak.nix
     ];
     programs = {
         # make HM-managed GTK stuff work
