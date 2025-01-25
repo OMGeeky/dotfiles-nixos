@@ -21,6 +21,7 @@
         ../../../progs/jetbrains/rust-rover.nix
         ../../../progs/jetbrains/rider.nix
         ../../../progs/jetbrains/pycharm.nix
+        ../../../progs/gamedev/unity.nix
 
         # media services
         ../../../services/media/playerctl.nix
