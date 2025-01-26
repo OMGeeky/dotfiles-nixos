@@ -54,7 +54,10 @@
         yazi.url = "github:sxyazi/yazi";
         
         # hyprwm
-        hyprland.url = "github:hyprwm/hyprland";
+        hyprland = {
+          url = "github:hyprwm/hyprland";
+          inputs.nixpkgs.follows = "nixpkgs";
+        };
     
         hypridle = {
           url = "github:hyprwm/hypridle";
