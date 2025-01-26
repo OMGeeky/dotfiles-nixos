@@ -40,6 +40,9 @@ in {
             "$mod, T, togglefloating,"
             "$mod, P, pseudo,"
             "$mod ALT, ,resizeactive,"
+
+            "ALT, TAB, exec, hyprctl clients | grep ^Window | rofi -dmenu | awk '{print $2}' | xargs -I{} hyprctl dispatcher focuswindow 'address:0x{}'"
+            "$mod ALT, TAB, exec, hyprctl clients | grep ^Window | rofi -dmenu | awk '{print $2}' | xargs -I{} hyprctl dispatcher closewindow 'address:0x{}'"
     
             # launcher
             "$mod, SPACE, exec, ${toggle "rofi -show run"}"
