@@ -18,10 +18,10 @@
   # enable hyprland
   wayland.windowManager.hyprland = {
     enable = true;
-    settings.debug = {
-        disable_logs = false; #enable logs if hyprland crashes
-        enable_stdout_logs = true;
-    };
+#    settings.debug = {
+#        disable_logs = false; #enable logs if hyprland crashes
+#        enable_stdout_logs = true;
+#    };
 
     package = inputs.hyprland.packages.${pkgs.system}.default;
 
