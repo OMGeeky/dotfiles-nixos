@@ -71,7 +71,7 @@
       "size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$"
 
 
-      "minsize 300 300, initialClass:(Unity) !(title:^(UnityTooltipWindow)$)"
+      "minsize 300 300, class:(Unity) !(initialTitle:(UnityTooltipWindow))" 
     ];
   };
 }
