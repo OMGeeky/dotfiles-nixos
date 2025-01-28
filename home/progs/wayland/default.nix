@@ -6,6 +6,7 @@
         ./hyprland
         ./hyprlock.nix
         ./wlogout.nix
+        ./eww.nix
     ];
     home.packages = with pkgs; [
         # screenshot
