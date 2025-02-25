@@ -11,8 +11,8 @@
             supportedFilesystems = ["ext4"];
         };
 
-        # use latest kernel
-        kernelPackages = pkgs.linuxPackages_latest;
+        # use latest-lts kernel
+        kernelPackages = pkgs.linuxPackages;
 
         consoleLogLevel = 3;
         kernelParams = [
