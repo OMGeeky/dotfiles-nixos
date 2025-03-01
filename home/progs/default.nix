@@ -12,5 +12,7 @@
 
         gnome-calculator
         gnome-control-center
+
+        ncdu # filesize tool. Great for figuring out where the space is going (like treesize)
     ];
 }
