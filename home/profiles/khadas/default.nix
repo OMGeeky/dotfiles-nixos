@@ -4,8 +4,8 @@
     ];
     wayland.windowManager.hyprland.settings = {
         monitor = [
-            "HDMI-A-1,highrr,auto,auto"
-            "HDMI-A-3,highrr,auto-left,auto"
+            "desc:Samsung Electric Company LC32G5xT HK2W600887,highrr,auto,auto"
+            "desc:HP Inc. HP 27xq CNK91418D2, highrr,auto-left,auto"
         ];
     };
 }
