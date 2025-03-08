@@ -30,7 +30,10 @@
                     {
                         home-manager = {
                             backupFileExtension = "backup";
-                            users.omgeeky.imports = homeProfiles."omgeeky@khadas";
+                            users = {
+                                omgeeky.imports = homeProfiles."omgeeky@khadas";
+                                test.imports = homeProfiles."test@khadas";
+                            };
                             extraSpecialArgs = specialArgs;
                         };
                     }
