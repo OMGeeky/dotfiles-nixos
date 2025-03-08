@@ -14,5 +14,15 @@
                 "docker"
             ];
         };
+
+        test = {
+            isNormalUser = true;
+            shell = pkgs.zsh;
+            extraGroups = [
+                "video"
+                "input"
+                "networkmanager"
+            ];
+        };
     };
 }

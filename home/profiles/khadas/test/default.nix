@@ -20,7 +20,6 @@
 
         # media services
         ../../../services/media/playerctl.nix
-#        ../../../services/media/spotifyd.nix
 
         # system services
         ../../../services/system/polkit-agent.nix
@@ -29,8 +28,4 @@
         ../../../services/wayland/hyprpaper.nix
         ../../../services/wayland/hypridle.nix
     ];
-
-    rust-tools.enable = true;
-
-
 }
