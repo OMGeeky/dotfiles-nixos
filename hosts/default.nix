@@ -29,6 +29,7 @@
                     "${mod}/programs/home-manager.nix"
                     {
                         home-manager = {
+                            backupFileExtension = "backup";
                             users.omgeeky.imports = homeProfiles."omgeeky@khadas";
                             extraSpecialArgs = specialArgs;
                         };
