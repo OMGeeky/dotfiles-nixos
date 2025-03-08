@@ -2,7 +2,7 @@
   lib,
   pkgs,
   inputs,
-  config,
+  self,
   ...
 }: {
   services.hyprpaper = {
@@ -11,11 +11,11 @@
 
     settings = {
 #      preload = ["${config.theme.wallpaper}"];
-      preload = ["${config.system.configurationRevision}/submods/nixos-media/sample.png"];
-      wallpaper = ["${config.system.configurationRevision}/submods/nixos-media/sample.png"];
+      preload = ["${self}/submods/nixos-media/anime1.jpg"];
+      wallpaper = [", ${self}/submods/nixos-media/anime1.jpg"];
 #      wallpaper = [", ${config.theme.wallpaper}"];
     };
   };
 
-  systemd.user.services.hyprpaper.Unit.After = lib.mkForce "graphical-session.target";
+  systemd.user.services.hyprpaper.Unit.After = lib.mkForce "hyprland-session.target";
 }
