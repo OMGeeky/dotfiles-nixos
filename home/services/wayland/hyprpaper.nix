@@ -11,8 +11,8 @@
 
     settings = {
 #      preload = ["${config.theme.wallpaper}"];
-      preload = ["/home/omgeeky/Pictures/sample.png"];
-      wallpaper = ["/home/omgeeky/Pictures/sample.png"];
+      preload = ["${config.system.configurationRevision}/submods/nixos-media/sample.png"];
+      wallpaper = ["${config.system.configurationRevision}/submods/nixos-media/sample.png"];
 #      wallpaper = [", ${config.theme.wallpaper}"];
     };
   };
