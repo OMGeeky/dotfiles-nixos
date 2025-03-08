@@ -1,0 +1,3 @@
+[submodule "nixos-media"]
+	path = submods/nixos-media
+	url = git@github.com:OMGeeky/nixos-media.git
