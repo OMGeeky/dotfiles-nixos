@@ -38,8 +38,8 @@ in
   systemd.user.services.hyprland-wallpaper-switcher = {
     Unit = {
       Description = "Hyprland Wallpaper Switcher";
-#      After = ["hyprland.target"];
-#      Requires = ["hyprland.target"];
+      After = ["hyprpaper.service"];
+      Requires = ["hyprpaper.service"];
     };
     Service = {
       Type = "oneshot";
@@ -47,7 +47,7 @@ in
       ExecStart = "${wallpaperScript}/bin/hyprland-wallpaper-switcher";
     };
     Install = {
-      WantedBy = ["graphical-session.target"];
+      WantedBy = ["hyprpaper.service"];
     };
   };
 
