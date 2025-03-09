@@ -30,8 +30,8 @@ in
     package = inputs.hyprpaper.packages.${pkgs.system}.default;
 
     settings = {
-      #  preload = ["${self}/submods/nixos-media/anime1.jpg"]; # commented out to disable static preload
-      #  wallpaper = [", ${self}/submods/nixos-media/anime1.jpg"]; # commented out to disable static wallpaper
+        preload = ["${wallpaperDir}/anime1.jpg"]; # commented out to disable static preload
+        wallpaper = [", ${wallpaperDir}/anime1.jpg"]; # commented out to disable static wallpaper
     };
   };
 
