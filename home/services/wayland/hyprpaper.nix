@@ -17,5 +17,5 @@
     };
   };
 
-  systemd.user.services.hyprpaper.Unit.After = lib.mkForce "hyprland-session.target";
+  systemd.user.services.hyprpaper.Unit.After = lib.mkForce "graphical-session.target";
 }
