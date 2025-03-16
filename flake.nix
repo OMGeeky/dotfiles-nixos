@@ -66,14 +66,14 @@
         # hyprwm
         hyprland = {
           url = "github:hyprwm/hyprland";
-#          inputs.nixpkgs.follows = "nixpkgs"; # disabled, to try if this fixes the build errors after update
+          inputs.nixpkgs.follows = "nixpkgs";
         };
     
         hypridle = {
           url = "github:hyprwm/hypridle";
           inputs = {
             hyprlang.follows = "hyprland/hyprlang";
-            hyprutils.follows = "hyprland/hyprutils";
+                hyprutils.follows = "hyprland/hyprutils";
             nixpkgs.follows = "hyprland/nixpkgs";
             systems.follows = "hyprland/systems";
           };
