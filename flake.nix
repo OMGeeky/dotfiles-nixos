@@ -61,8 +61,6 @@
           inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        yazi.url = "github:sxyazi/yazi";
-        
         # hyprwm
         hyprland = {
           url = "github:hyprwm/hyprland";
