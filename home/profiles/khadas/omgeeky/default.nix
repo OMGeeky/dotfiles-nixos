@@ -19,7 +19,7 @@
         ../../../progs/wayland
         ../../../progs/jetbrains
         ../../../progs/jetbrains/rust-rover.nix
-#        ../../../progs/jetbrains/rider.nix
+        ../../../progs/jetbrains/rider.nix
         ../../../progs/jetbrains/pycharm.nix
         ../../../progs/gamedev/unity.nix
         ../../../progs/discord.nix
