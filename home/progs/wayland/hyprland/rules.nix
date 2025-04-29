@@ -71,6 +71,19 @@
       "size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$"
 
 
+      # some Jetbrains fixes (https://youtrack.jetbrains.com/issue/IJPL-61714/Popups-not-working-correctly-with-Wayland-Hyprland)
+      "noinitialfocus,class:^jetbrains-(?!toolbox),floating:1"
+      # center the pops excepting context menu
+      "move 30% 30%,class:^jetbrains-(?!toolbox),title:^(?!win.*),floating:1"
+      "size 40% 40%,class:^jetbrains-(?!toolbox),title:^(?!win.*),floating:1"
+
+      # fix tooltips (always have a title of `win.<id>`) (https://github.com/hyprwm/Hyprland/issues/4257#issuecomment-2759517981)
+      "noinitialfocus, class:^(.*jetbrains.*)$, title:^(win.*)$"
+      "nofocus, class:^(.*jetbrains.*)$, title:^(win.*)$"
+      # fix tab dragging (always have a single space character as their title)
+      "noinitialfocus, class:^(.*jetbrains.*)$, title:^\\s$"
+      "nofocus, class:^(.*jetbrains.*)$, title:^\\s$"
+
 #      "minsize 300 300, class:(Unity) !(initialTitle:(UnityTooltipWindow))" 
     ];
   };
