@@ -1,6 +1,6 @@
 {...}:{
     imports = [
-        ./nvidia-bus-id.nix
+#        ./nvidia-bus-id.nix
         ./hardware-configuration.nix
     ];
     networking = {

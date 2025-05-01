@@ -72,10 +72,10 @@
 
 
       # some Jetbrains fixes (https://youtrack.jetbrains.com/issue/IJPL-61714/Popups-not-working-correctly-with-Wayland-Hyprland)
-      "noinitialfocus,class:^jetbrains-(?!toolbox),floating:1"
+#      "noinitialfocus,class:^jetbrains-(?!toolbox),floating:1"
       # center the pops excepting context menu
-      "move 30% 30%,class:^jetbrains-(?!toolbox),title:^(?!win.*),floating:1"
-      "size 40% 40%,class:^jetbrains-(?!toolbox),title:^(?!win.*),floating:1"
+#      "move 30% 30%,class:^jetbrains-(?!toolbox),title:^(?!win.*),floating:1"
+#      "size 40% 40%,class:^jetbrains-(?!toolbox),title:^(?!win.*),floating:1"
 
       # fix tooltips (always have a title of `win.<id>`) (https://github.com/hyprwm/Hyprland/issues/4257#issuecomment-2759517981)
       "noinitialfocus, class:^(.*jetbrains.*)$, title:^(win.*)$"
