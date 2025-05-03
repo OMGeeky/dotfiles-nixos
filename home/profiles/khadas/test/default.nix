@@ -18,6 +18,8 @@
         ../../../progs
         ../../../progs/wayland
 
+        ../../../progs/jetbrains/intellij.nix
+
         # media services
         ../../../services/media/playerctl.nix
 
