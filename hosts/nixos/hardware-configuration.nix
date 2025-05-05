@@ -15,13 +15,14 @@
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/de55b045-4002-4ea9-a965-ccd125ac51d7";
+#    { device = "/dev/disk/by-uuid/854f266c-f317-4047-baa0-47f7d5156001";
       fsType = "ext4";
     };
 
-  fileSystems."/mnt/eos" =
-    { device = "/dev/disk/by-uuid/d0593a24-0f1d-49b2-8632-493853d9d401";
-      fsType = "ext4";
-    };
+#  fileSystems."/data" =
+#    { device = "/dev/disk/by-uuid/854f266c-f317-4047-baa0-47f7d5156001";
+#      fsType = "ext4";
+#    };
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/64C4-2534";
