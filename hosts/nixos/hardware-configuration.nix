@@ -18,6 +18,13 @@
 #    { device = "/dev/disk/by-uuid/854f266c-f317-4047-baa0-47f7d5156001";
       fsType = "ext4";
     };
+  fileSystems."/nix" =
+    {
+        device = "/dev/disk/by-uuid/79899f31-1489-4736-ae87-81d5cf118b48";
+        fsType = "btrfs";
+        neededForBoot = true;
+        options = [ "noatime" ];
+    };
 
 #  fileSystems."/data" =
 #    { device = "/dev/disk/by-uuid/854f266c-f317-4047-baa0-47f7d5156001";
