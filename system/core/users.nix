@@ -12,6 +12,7 @@
                 "video"
                 "wheel"
                 "docker"
+                "dialout" # needed for esp32 development
             ];
         };
 
