@@ -8,7 +8,7 @@
         networkmanager.enable = true;
         firewall = {
             enable = true;
-            allowedTCPPorts = [ 54321 ];
+            allowedTCPPorts = [ 54321 1883 ];
         };
     };
     security.tpm2.enable = true;
