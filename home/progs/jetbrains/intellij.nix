@@ -1,10 +1,13 @@
-{pkgs, ... }: {
-    home.packages = with pkgs; [
-        (jetbrains.plugins.addPlugins
-            jetbrains.idea-ultimate [ 
-                "com.github.copilot"
-                "org.jetbrains.junie"
-            ] 
-        )
+{pkgs, inputs, system, ... }: 
+let
+    source = inputs.jetbrains-plugins.plugins."${system}";
+    pluginList = [
+        source."org.jetbrains.junie"
+        source."com.github.copilot"
+    ];
+
+in {
+    home.packages = with source; [
+      buildIdeWithPlugins pkgs.jetbrains "idea-ultimate" pluginList 
     ];
 }
