@@ -107,7 +107,7 @@
           };
         };
 
-
+        jetbrains-plugins.url = "github:theCapypara/nix-jetbrains-plugins";
 
     };
 }
