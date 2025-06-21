@@ -9,6 +9,7 @@
     home.packages = with pkgs; [
         signal-desktop
         neovim
+        featherpad # very simple text gui editor
 
         gnome-calculator
         gnome-control-center
