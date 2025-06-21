@@ -107,7 +107,10 @@
           };
         };
 
-        jetbrains-plugins.url = "github:theCapypara/nix-jetbrains-plugins";
+        jetbrains-plugins = {
+            url = "github:theCapypara/nix-jetbrains-plugins";
+            inputs.nixpkgs.follows = "nixpkgs-unstable";
+        };
 
     };
 }
