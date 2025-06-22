@@ -85,6 +85,8 @@
       "nofocus, class:^(.*jetbrains.*)$, title:^\\s$"
 
 #      "minsize 300 300, class:(Unity) !(initialTitle:(UnityTooltipWindow))" 
+      "workspace 3, class:^(com-gpl-rpg-atcontentstudio-ATContentStudio)$"
+      "tile, class:^(com-gpl-rpg-atcontentstudio-ATContentStudio)$"
     ];
   };
 }
