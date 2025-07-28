@@ -13,7 +13,7 @@
     };
 
     # don't touch this
-    system.stateVersion = lib.mkDefault "24.11";
+    system.stateVersion = lib.mkDefault "25.05";
 
     time.timeZone = lib.mkDefault "Europe/Berlin";
 

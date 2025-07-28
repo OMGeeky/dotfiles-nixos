@@ -33,7 +33,7 @@
 
     inputs = {
         #NixOs official package source
-        nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+        nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
         nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
         # global, so they can be `.follow`ed
@@ -57,14 +57,14 @@
         helix.url = "github:helix-editor/helix";
     
         hm = {
-          url = "github:nix-community/home-manager/release-24.11";
+          url = "github:nix-community/home-manager/release-25.05";
           inputs.nixpkgs.follows = "nixpkgs-unstable";
         };
 
         # hyprwm
         hyprland = {
           url = "github:hyprwm/hyprland";
-          inputs.nixpkgs.follows = "nixpkgs";
+#          inputs.nixpkgs.follows = "nixpkgs";
         };
     
         hypridle = {
@@ -107,10 +107,10 @@
           };
         };
 
-        jetbrains-plugins = {
-            url = "github:theCapypara/nix-jetbrains-plugins";
-            inputs.nixpkgs.follows = "nixpkgs-unstable";
-        };
+#        jetbrains-plugins = {
+#            url = "github:theCapypara/nix-jetbrains-plugins";
+#            inputs.nixpkgs.follows = "nixpkgs-unstable";
+#        };
 
     };
 }

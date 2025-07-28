@@ -23,7 +23,9 @@
 #        enable_stdout_logs = true;
 #    };
 
-    package = inputs.hyprland.packages.${pkgs.system}.default;
+	# set package & portalPackage to null to use the nixos module, instead of home-manager one
+    package = null;
+    portalPackage = null; 
 
     systemd = {
       enable = false; # https://wiki.hyprland.org/Useful-Utilities/Systemd-start/

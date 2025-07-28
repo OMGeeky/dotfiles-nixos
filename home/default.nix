@@ -9,7 +9,7 @@
     ];
 
     home = {
-        stateVersion = "24.11";
+        stateVersion = "25.05";
     };
 
     # let HM manage itself when in standalone mode
