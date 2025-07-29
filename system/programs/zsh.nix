@@ -10,7 +10,7 @@
             autosuggestions.enable = true;
             syntaxHighlighting = {
                 enable = true;
-                patterns = {"rf -rf *" = "fg=black,bg=red";};
+                patterns = {"rm -rf *" = "fg=black,bg=red";};
                 styles = {"alias"="fg=blue";};
                 highlighters = ["main" "brackets" "pattern"];
             };
