@@ -13,11 +13,28 @@
     ];
 
       # we need git for flakes
-    environment.systemPackages = [
-        pkgs.git
-        pkgs.kdePackages.dolphin
-        pkgs.kdePackages.qtwayland
-        pkgs.kdePackages.qtsvg
+    environment.systemPackages = with pkgs; [
+        git
+        kdePackages.dolphin
+        kdePackages.qtwayland
+        kdePackages.qtsvg
+
+	# useful tools
+	psmisc # ex. killall, fuser
+
+	usbutils
+	pciutils
+
+	ripgrep # (rg) alternative to grep respecting .gitignore
+	fd # alternative to find
+
+	mtr # network diagnostic tool combining traceroute & ping
+	nmap # more network tooling
+
+	# monitoring
+	htop
+	iotop
+
     ];
     
     virtualisation.docker.enable = true;
