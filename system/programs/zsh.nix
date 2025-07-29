@@ -11,7 +11,7 @@
             syntaxHighlighting = {
                 enable = true;
                 patterns = {"rf -rf *" = "fg=black,bg=red";};
-                styles = {"alias"="fg=magenta";};
+                styles = {"alias"="fg=blue";};
                 highlighters = ["main" "brackets" "pattern"];
             };
 
