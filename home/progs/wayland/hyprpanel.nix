@@ -2,6 +2,7 @@
 
 {
 	programs.hyprpanel = {
+		enable = true;
 # Configure and theme almost all options from the GUI.
 # See 'https://hyprpanel.com/configuration/settings.html'.
 # Default: <same as gui>
