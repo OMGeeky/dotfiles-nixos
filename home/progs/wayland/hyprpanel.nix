@@ -16,7 +16,7 @@
 					"0" = {
 						left = [ "dashboard" "workspaces" ];
 						middle = [ "media" ];
-						right = [ "volume" "systray" "notifications" ];
+						right = [ "netstat" "hypridle" "volume" "systray" "notifications" ];
 					};
 				};
 			};
@@ -27,8 +27,9 @@
 			menus.clock = {
 				time = {
 					military = true;
-					hideSeconds = true;
+					hideSeconds = false;
 				};
+				weather.enabled = false;
 				weather.unit = "metric";
 			};
 
