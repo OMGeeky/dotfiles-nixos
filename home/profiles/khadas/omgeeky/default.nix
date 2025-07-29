@@ -17,6 +17,7 @@
         # programs
         ../../../progs
         ../../../progs/wayland
+        ../../../progs/wayland/hyprpanel.nix
         ../../../progs/jetbrains
         ../../../progs/jetbrains/rust-rover.nix
         ../../../progs/jetbrains/intellij.nix
