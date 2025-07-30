@@ -2,8 +2,9 @@
     fonts = {
         packages = with pkgs; [
             font-awesome
-#            nerdfonts
 
+            kdePackages.breeze-icons
+#            adwaita-icon-theme
             jetbrains-mono
         ]++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
     
