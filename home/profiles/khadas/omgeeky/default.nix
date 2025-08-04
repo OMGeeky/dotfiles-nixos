@@ -3,9 +3,6 @@
         # default config for pc
         ../. 
 
-        # options
-        ../../../options
-
         # editors
         ../../../editors/helix
 

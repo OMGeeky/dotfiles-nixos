@@ -5,6 +5,7 @@
     imports = [
         ./special/default.nix
         ./terminal
+        ./options
         self.nixosModules.theme
     ];
 
