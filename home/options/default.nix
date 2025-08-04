@@ -8,6 +8,7 @@
                 rustup
                 gcc
                 rustc
+                openssl
 #                cargo
 #                rustfmt
 #                clippy
@@ -18,7 +19,7 @@
         # Add option to specify default Rust edition
         defaultEdition = lib.mkOption {
             type = lib.types.str;
-            default = "2021";
+            default = "2024";
             description = "Default Rust edition to use";
         };
     };
