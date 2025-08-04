@@ -4,7 +4,7 @@
             font-awesome
 
             kdePackages.breeze-icons
-#            adwaita-icon-theme
+            adwaita-icon-theme
             jetbrains-mono
         ]++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
     
