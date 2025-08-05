@@ -8,9 +8,11 @@
 {
     imports = [
         ./nh.nix
+        ./nix-ld.nix
         ./nixpkgs.nix
         ./substituters.nix
     ];
+    nixld.enable = true;
 
       # we need git for flakes
     environment.systemPackages = with pkgs; [
