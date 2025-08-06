@@ -125,5 +125,12 @@
 	config = lib.mkIf config.nixld.enable {
 		programs.nix-ld.enable = true;
 		programs.nix-ld.libraries = config.nixld.libs;
+		environment.systemPackages = with pkgs; [
+				openssl
+				pkg-config
+		];
+		environment.variables = {
+				PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+		};
 	};
 }
